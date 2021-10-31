@@ -23,7 +23,7 @@ class SampleControllerTest extends Specification {
     @Test
     def "test with auto DI"() {
         given:
-        service.action() >> "good bye"
+        service.action() >> "good bye" // 不要
 
         when:
         def result = sut.index()
@@ -42,7 +42,7 @@ class SampleControllerTest extends Specification {
         given:
         def service = Spy(SampleService)
         def sut = new SampleController(service)
-        service.action() >> "good bye"
+        service.action() >> "good bye" // 不要
 
         when:
         def result = sut.index()
@@ -58,7 +58,7 @@ class SampleControllerTest extends Specification {
     def "test with manual DI and mock"() {
         given:
         def service = Mock(SampleService)
-        service.action() >> "good bye"
+        service.action() >> "good bye" // 不要
         def sut = new SampleController(service)
 
         when:
