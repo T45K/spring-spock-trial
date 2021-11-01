@@ -2,6 +2,6 @@ package com.example.springspocktrial;
 
 import org.springframework.stereotype.Service;
 
-@Service("service3")
+@Service // こっちには書かなくても良さそう
 public class SampleService3 implements ISampleService3 {
 }
