@@ -9,9 +9,9 @@ import org.springframework.context.annotation.Primary;
 @ComponentScan
 public class Config {
 
-    @Bean
-    @Primary
-    ISampleService2 sampleService2() {
-        return new SampleService2();
-    }
+//    @Bean
+//    @Primary
+//    ISampleService2 sampleService2() {
+//        return new SampleService2();
+//    }
 }
