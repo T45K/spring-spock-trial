@@ -1,6 +1,5 @@
-package com.example.springspocktrial;
+package com.example.springspocktrial.duplicatedBean;
 
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 @Service
